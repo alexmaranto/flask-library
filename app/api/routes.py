@@ -63,7 +63,7 @@ def update_car(current_user_token,id):
 
 
 # DELETE car ENDPOINT
-@api.route('/book/<id>', methods = ['DELETE'])
+@api.route('/books/<id>', methods = ['DELETE'])
 @token_required
 def delete_book(current_user_token, id):
     book = Book.query.get(id)
